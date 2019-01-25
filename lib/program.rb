@@ -16,33 +16,20 @@
 #****************************************************************************
 class Program
 
-	@@global_hash = {}
+	def scrapping
+		global_hash = {}
 
-	def initialize
-	end
+		scrapper_mairie_1 = Scrapper.new("http://annuaire-des-mairies.com/pyrenees-atlantiques.html")	
+		scrapper_mairie_2 = Scrapper.new("http://annuaire-des-mairies.com/pyrenees-atlantiques-2.html")	
+		scrapper_mairie_3 = Scrapper.new("http://annuaire-des-mairies.com/pyrenees-atlantiques-3.html")
 
-	def perform
-		hash_mairie_1 = Scrapper.new("http://annuaire-des-mairies.com/pyrenees-atlantiques.html")	
-		hash_mairie_2 = Scrapper.new("http://annuaire-des-mairies.com/pyrenees-atlantiques-2.html")	
-		hash_mairie_3 = Scrapper.new("http://annuaire-des-mairies.com/pyrenees-atlantiques-3.html")
+		hash_mairie_1 = scrapper_mairie_1.hash_town
+		hash_mairie_2 = scrapper_mairie_2.hash_town
+		hash_mairie_3 = scrapper_mairie_3.hash_town
 
-
-		puts hash_mairie_1.hash_town
-		puts "Mairie 1 ^  || Mairie 2 v"
-		sleep(10)
-		puts hash_mairie_2.hash_town
-		puts "Mairie 2 ^  || Mairie 3 v"
-		sleep(10)
-		puts hash_mairie_3.hash_town
-		puts "Mairie 3 ^"
-
-		@@global_hash.merge(hash_mairie_1.merge(hash_mairie_2.merge(hash_mairie_3)))
-
-		puts @@global_hash.inspect
-		puts "Mairie All ^ "
+		global_hash = global_hash.merge(hash_mairie_1.merge(hash_mairie_2.merge(hash_mairie_3)))
 	end
 end
-
 # End of Program's name
 #.............................................................................
 #.............................................................................
