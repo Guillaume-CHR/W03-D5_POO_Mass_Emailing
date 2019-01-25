@@ -2,8 +2,8 @@
 ##****************************************************************************
 # RUBY - Main Program
 #****************************************************************************
-#   Ruby's Program - app.rb
-#   Written by: Guillaume CHRISTE
+#   Ruby's Program - quickstart.rb
+#   Written by: THP Tls session 7
 # 	Date: Date of modification
 #   
 #   Description:
