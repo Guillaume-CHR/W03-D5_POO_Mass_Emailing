@@ -3,8 +3,8 @@
 # RUBY - @NameOfTheProgram
 #****************************************************************************
 #   Ruby's Program - Name of the program
-#   Written by: Guillaume CHRISTE
-# 	Date: Date of modification
+#   Written by: THP Tls session 7
+# 	Date: 25-Jan-2019
 #   
 #   Description:
 # 		- 
