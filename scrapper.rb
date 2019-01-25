@@ -1,6 +1,17 @@
-require 'nokogiri'
 
-
+#! /usr/bin/env ruby
+##****************************************************************************
+# RUBY - Scrapper
+# ****************************************************************************
+#   Ruby's Program - Scrapper
+#   Written by: THP Tls session 7
+# 	Date: 25-Jan-2019
+#   
+#   Description:
+# 		- 
+# 		- 
+#
+#****************************************************************************
 class Scrapper
 
 #initialise  le rdv avec les infos passées en paramètre
@@ -56,3 +67,6 @@ page_mairie = Scrapper.new("http://annuaire-des-mairies.com/val-d-oise.html")
 puts page_mairie.mairies
 
 end
+# End of SScrapper ...........................................................
+#.............................................................................
+#.............................................................................
